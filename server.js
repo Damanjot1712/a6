@@ -1,4 +1,14 @@
-
+/*********************************************************************************
+* WEB322 – Assignment 5
+* I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part
+* of this assignment has been copied manually or electronically from any other source
+* (including 3rd party web sites) or distributed to other students.
+*
+* Name: ___Damanjot Singh___________________ Student ID: _148285216____ Date: _27/11/2022______
+*
+* Online (Heroku Cyclic) Link: ______https://agreeable-sheath-dress-frog.cyclic.app__________________________________________________
+*
+********************************************************************************/\
 const express = require("express");
 const app = express();
 const path = require("path");
