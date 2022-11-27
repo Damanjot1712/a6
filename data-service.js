@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
-var sequelize = new Sequelize('d5e3kmgj3fosms', 'wdnkhdurgsgopd', 'a0d261ee90c510d7f88f26c57950cf5b99b60f1d2daaeb36a2d3d851c8a181fb', {
-    host: 'ec2-54-225-95-183.compute-1.amazonaws.com',
+var sequelize = new Sequelize('ordgceig','ordgceig', 'TSzkB2tz5C-_tFhWKiFrLU2M4uocmjN1', {
+    host: 'https://agreeable-sheath-dress-frog.cyclic.app',
     dialect: 'postgres',
     port: 5432,
     dialectOptions: {
