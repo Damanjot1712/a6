@@ -39,6 +39,7 @@ const Department = sequelize.define('department', {
     departmentName:Sequelize.STRING
 })
 
+//
 module.exports.initialize = () => {
     return new Promise((resolve,reject) => {
         sequelize.sync()
