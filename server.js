@@ -8,7 +8,7 @@
 *
 * Online (Heroku Cyclic) Link: ______https://agreeable-sheath-dress-frog.cyclic.app__________________________________________________
 *
-********************************************************************************/\
+********************************************************************************/
 const express = require("express");
 const app = express();
 const path = require("path");
