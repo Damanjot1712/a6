@@ -1,6 +1,8 @@
 <div class="row">
     <div class="col-md-12">
-        <h2> Departments <a href="/departments/add" class="btn btn-success pull-right">Add New Department</a></h2>
+        <h2> Employees 
+            <a href="/departments/add" class="btn btn-success pull-right"> Add New Department </a>
+        </h2>
         <hr>
         {{!-- 
         {{#each departments}}
@@ -20,8 +22,12 @@
                 <tbody>
                     {{#each departments}}
                         <tr>
+                            {{!-- 
                             <td> <a href="/employees?department={{departmentId}}">  {{departmentId}} </a> </td>
-                            <td><a href="/department/{{departmentId}}">{{departmentName}}</a></td>
+                            <td> <a href ="/employees?department={{departmentId}}"> {{departmentName}} </a> </td>
+                            --}}
+                            <td> <a href="/department/{{departmentId}}"> {{departmentId}} </a> </td>
+                            <td> <a href="/department/{{departmentId}}"> {{departmentName}} </a> </td>
                         </tr>
                     {{else}}
                         <div class="col-md-12 text-center">
