@@ -297,7 +297,6 @@ app.get("/userHistory", ensureLogin, (req,res) => {
     res.render("userHistory", {user:req.session.user} );
 });
 
-
 app.use((req,res)=>{
     res.status(404).send("Page Not Found");
 });
