@@ -37,7 +37,7 @@ exports.registerUser = (userData) => {
         }
         else {
             bcrypt.genSalt(10, function(err, err2) {
-                bcrypt.hash(userData.password, err2, function(err, hash) {
+                bcrypt.hash(userData.password, 10, function(err, hash) {
                     if (err) {
                         reject("error in password");
                     }

@@ -268,7 +268,7 @@ app.get("/register", (req,res) => {
 app.post("/register", (req,res) => {
     dataServiceAuth.registerUser(req.body)
     .then(() => res.render("register", {successMessage: "User created" } ))
-        
+
     .catch (err => res.render("register", {errorMessage: err, userName:req.body.userName }) )
 });
 
@@ -296,7 +296,6 @@ app.get("/logout", (req,res) => {
 app.get("/userHistory", ensureLogin, (req,res) => {
     res.render("userHistory", {user:req.session.user} );
 });
-
 
 
 app.use((req,res)=>{
