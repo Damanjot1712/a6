@@ -20,7 +20,7 @@ let User;
 exports.initialize = () => {
     return new Promise((resolve,reject) => {
         let db = mongoose.createConnection("mongodb+srv://senecaweb.rsbwdc7.mongodb.net/a5", { useNewUrlParser: true });
-        db.on('error', (err) => {
+        db.on('error', (err) =>{
             reject(err);
         })
         db.once('open', () => {
@@ -51,7 +51,7 @@ exports.registerUser = (userData) => {
                                     reject("User Name already taken");
                                 }
                                 else {
-                                    reject("There was an error creating the user: " + err);
+                                    reject("There was an error creating the user: " +err);
                                 }
                             }
                             else {
