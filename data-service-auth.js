@@ -77,7 +77,7 @@ exports.checkUser = (userData) => {
                     User.update(
                         { userName: users[0].userName },
                         { $set: {loginHistory: users[0].loginHistory} },
-                        { multi: false }
+                        {multi: false}
                     )
                     .exec()
                     .then(() => {resolve(users[0])})
@@ -89,7 +89,7 @@ exports.checkUser = (userData) => {
             })
         })
         .catch(() => { 
-            reject("Unable to find user: " + userData.userName); 
+            reject("Unable to find username: " + userData.userName); 
         }) 
     })
 };
